@@ -1,18 +1,31 @@
+:root {
+    --primary: rgba(245, 245, 220);
+    --secondary: rgb(0, 61, 0);
+    --tertiary: rgb(127, 180, 123);
+}
 
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    display: block;
+}
 
 .header {
-    background-color: rgba(68, 88, 119, 1) ;
-    color: rgba(146,204,206,1);
+    background-color: var(--tertiary);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 30px 0px 0px;
 }
 
 .header h1 {
-    background-color:   rgba(146,204,206,1);
-    color: rgba(68, 88, 119, 1);
+    background-color: var(--secondary);
+    color: var(--tertiary);
     padding-left: 50px;
+    font-size: 45px;
 }
 
 #nav ul{
@@ -20,13 +33,44 @@
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-wrap: wrap;
 }
+
 #nav li {
-    padding: 5px 10px;
+    padding: 5px 0px;
     text-decoration: none;
     margin: 20px;
 }
+
 #nav a {
-    color: rgba(146,204,206,1);
+    color: var(--secondary);
+    font-size: 25px;
+}
+
+.Red-Wood{
+    background-image: url(./assets/red\ wood.jpg);
+    background-color: var(--secondary);
+    min-height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 40px;
+}
+
+.Red-Wood h2 {
+    background-color: var(--secondary);
+    color:  var(--tertiary);
+    font-size: 40px;
+}
+
+.wrapper {
+    margin: 15px 150px 15px 150px;
+    background-color: var(--primary);
+}
+
+#About-Me {
+    display: flex;
+    align-items: flex-start;
+    text-align: right;
+    font-size: 35px;
+
 }
