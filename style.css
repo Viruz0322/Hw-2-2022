@@ -2,6 +2,7 @@
     --primary: rgba(245, 245, 220);
     --secondary: rgb(0, 61, 0);
     --tertiary: rgb(127, 180, 123);
+    --banner: rgb(226, 114, 91);
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 }
 
 .header {
-    background-color: var(--tertiary);
+    background-color: var(--banner);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,7 +26,8 @@ body {
     background-color: var(--secondary);
     color: var(--tertiary);
     padding-left: 50px;
-    font-size: 45px;
+    padding-right: 5px;
+    font-size: 55px;
 }
 
 #nav ul{
@@ -65,12 +67,106 @@ body {
 .wrapper {
     margin: 15px 150px 15px 150px;
     background-color: var(--primary);
+    display: block;
+    justify-content: space-between;
 }
 
-#About-Me {
+.page-section {
     display: flex;
-    align-items: flex-start;
-    text-align: right;
-    font-size: 35px;
+    color: var(--banner);
+    flex-direction: row;
+    margin: 20px 0;
+    padding: 10px 0;
+    align-items: stretch;
+}
 
+.page-section h2 {
+    font-size: 50px;
+    border-right: 5px var(--secondary) solid;
+    padding-right: 5px;
+    text-align: right;
+    color: var(--tertiary);
+}
+
+#About-Me-Text {
+    text-align: left;
+    font-size: 20px;
+    display: block;
+    margin: 15px 10px 15px 10px;
+}
+
+.flex-conatiner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 75%;
+}
+
+#Contact-Me address {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Surf {
+    background-image: url(/assets/Place\ Holder.jpg);
+    background-color: var(--secondary);
+    background-repeat: no-repeat;
+    min-height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 40px;
+    width: 75vw;
+}
+
+#LED {
+    background-image: url(/assets/Place\ Holder.jpg);
+    background-color: var(--secondary);
+    background-repeat: no-repeat;
+    min-height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 40px;
+}
+
+#Calculator {
+    background-image: url(/assets/Place\ Holder.jpg);
+    background-color: var(--secondary);
+    background-repeat: no-repeat;
+    min-height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 40px;
+}
+
+#Pastel {
+    background-image: url(/assets/Place\ Holder.jpg);
+    background-color: var(--secondary);
+    background-repeat: no-repeat;
+    min-height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 40px;
+}
+
+#Run {
+    background-image: url(/assets/Place\ Holder.jpg);
+    background-color: var(--secondary);
+    background-repeat: no-repeat;
+    min-height: 250px;
+    min-width: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px 40px;
+}
+
+#Surf h3 {
+    background-color: var(--secondary);
+    color:  var(--tertiary);
+    font-size: 30px;
 }
